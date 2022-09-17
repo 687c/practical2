@@ -1,4 +1,4 @@
-// import { expect } from "chai";
+import { expect } from "chai";
 import { ethers } from "hardhat";
 
 describe("Divide contract", function () {
@@ -9,6 +9,8 @@ describe("Divide contract", function () {
 
         const hardHatContract = await Divide.deploy();
 
-        await hardHatContract.divide();
+        let res = await (await hardHatContract.divide()).toNumber() / 10 ** 5;
+	expect(res).to.equal(1.5);
+	// console.log("this is thre res", res);
     });
 });
