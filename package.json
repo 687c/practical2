@@ -8,8 +8,7 @@
 		"compile": "npx hardhat compile"
 	},
 	"repository": {
-		"type": "git",
-		"url": "git+https://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@github.com/687c/practical2.git"
+		"type": "git"
 	},
 	"keywords": [],
 	"author": "",

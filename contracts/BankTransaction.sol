@@ -43,7 +43,7 @@ contract BankTx {
         // uint160 recepientAdd = address(uint160(recepient));
 
         // uint160 hash = clientAdd + recepientAdd;
-        string memory hash = "nothing to see here";
+        string memory hash = "hash";
 
         //push the tx into txArray
         txArr.push(
